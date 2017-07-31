@@ -1,4 +1,19 @@
 " Vim Config - Blair Davidson
+" turn syntax highlighting on
+syntax enable
+
+set t_Co=256
+
+" pathogen installation
+execute pathogen#infect()
+filetype plugin indent on
+
+colorscheme dracula
+set laststatus=2
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 " set UTF-8 encoding
 set enc=utf-8
@@ -16,10 +31,6 @@ set shiftwidth=4     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
-" turn syntax highlighting on
-set t_Co=256
-syntax on
-" colorscheme wombat256
 " turn line numbers on
 set number
 " highlight matching braces
